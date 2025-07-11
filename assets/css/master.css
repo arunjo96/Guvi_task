@@ -121,6 +121,7 @@ button {
   color: #fff;
   padding: 10px 16px;
   border-radius: 50%;
+  z-index: 9999;
   transition: all 0.3s ease;
 }
 
@@ -153,7 +154,7 @@ header {
 }
 .main_header {
   justify-content: space-between;
-  padding: 1.5rem 0;
+  padding: 1.1rem 0;
 }
 
 .nav_links li a {
@@ -922,11 +923,125 @@ footer {
 
   .carousel_card_main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 18px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .carousel_content h4 {
+    font-size: 1.2rem;
+  }
+  .rating_tag{
+    font-size: 0.9rem;
+  }
+
+  .bottom_row{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+  }
+
+  .article_two, .article_three, .article_five {
+    padding: 2rem 0;
   }
 
   .about_main .section_content h3 {
     width: 100%;
+  }
+
+  .article_three .carousel_card_main{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .vacation_card .price_tag {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 520px) {
+  .main_header {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .nav_links{
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .banner_sec{
+    flex-direction: column-reverse;
+    padding-top: 12rem;
+  }
+
+  .banner_sec img, .about_main .section_content h3, .article_four .section_content p, .blog_img img {
+    width: 100%;
+  }
+
+  .apply_div{
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .section_content p{
+    width: 100%;
+    text-align: center;
+  }
+
+  .section_content img, .about_main .vector_img, .banner_bottom_main::after{
+    visibility: hidden;
+  }
+
+  .main_card {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  .carousel_card_main{
+    align-items: normal;
+  }
+
+  .carousel_card_main, .about_main, .main_card_blog, .footer_main, .footer-bottom{
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  
+  .banner_bottom_content h3{
+    width: 100%;
+    font-size: 2rem
+  }
+
+  .banner_bottom_main {
+    padding: 40px 15px;
+  }
+
+  .subscribe-form {
+    max-width: 100%;
+    flex-direction: column;
+    background: transparent;
+    border-radius: unset;
+  }
+
+  .subscribe-form i {
+    left: 11px;
+    top: 24%;
+  }
+
+  .subscribe-form input{
+    border-radius: unset;
+    width: 100%;
+  }
+
+  .subscribe-form .sub_btn {
+    width: 100%;
+    margin-top: 12px;
+    background-color: var(--secondary-color);
+    margin-right: 0;
+  }
+
+  .footer-bottom{
+    text-align: center;
   }
 }
