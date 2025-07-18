@@ -3,90 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Askme Identity - Home</title>
-    <link rel="icon" href="assets/img/fav_icon.svg" type="image/png" />
+    <title>Trabook - Home</title>
+    <link rel="icon" href="assets/img/fav_icon.jpg" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/css/master.css" />
   </head>
   <body>
     <!-- Top Anchor -->
     <a id="top"></a>
 
-    <div class="bg_check"></div>
-
     <!-- header-start -->
-    <header class="w-full fixed top-0 left-0 bg-white z-50 shadow-lg">
-      <div class="container mx-auto sm:px-6 lg:px-8">
-        <div
-          class="main_header grid items-center gap-y-3 py-3 md:flex md:items-center md:justify-between lg:flex lg:flex-row lg:justify-between lg:items-center"
-        >
-          <div class="logo mx-auto md:mx-0 lg:mx-0">
+    <header>
+      <div class="container">
+        <div class="main_header flex-box">
+          <div class="logo">
             <a href="index.html"
-              ><img
-                src="assets/img/header_logo.png"
-                class="w-30"
-                alt="Askme_indentity Logo"
+              ><img src="assets/img/main_logo.svg" alt="Trabook Logo"
             /></a>
           </div>
-          <nav class="xl:pl-12">
-            <ul
-              class="nav_links md:gap-2 text-xl grid grid-cols-2 gap-4 justify-center sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 lg:flex lg:flex-row lg:gap-x-10 text-center"
-            >
-              <li>
-                <a href="index.html" class="text-base lg:text-xl">Home</a>
-              </li>
-              <li>
-                <a href="about.html" class="text-base lg:text-xl">About</a>
-              </li>
-              <li>
-                <a href="courses.html" class="text-base lg:text-xl">Courses</a>
-              </li>
-              <li>
-                <a href="contact.html" class="text-base lg:text-xl">Contact</a>
-              </li>
+          <nav>
+            <ul class="nav_links flex-box">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="destination.html">Destination</a></li>
+              <li><a href="tour.html">Tour</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </nav>
-          <div
-            class="login_div flex justify-around items-center md:justify-center lg:justify-center lg:gap-10 gap-4"
-          >
-            <div class="cart_sec flex gap-x-4 items-center">
-              <a class="flex relative cursor-pointer size-5.5">
-                <img src="assets/img/png/cart_icon.png" alt="cart_icon" />
-                <span class="absolute -right-1 -top-1 flex size-4">
-                  <span
-                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
-                  ></span>
-                  <span
-                    class="relative inline-flex size-4 rounded-full bg-emerald-500 text-white text-[12px] items-center justify-center flex"
-                  >
-                    0
-                  </span>
-                </span>
-              </a>
-              <a href="#" class="cursor-pointer size-5"
-                ><img src="assets/img/png/user_profile.png" alt="user_profile"
-              /></a>
-              <a href="#" class="cursor-pointer size-4.5"
-                ><img src="assets/img/png/search.png" alt="search"
-              /></a>
-            </div>
-            <div class="flex-box lg:gap-x-6 gap-x-4">
-              <a
-                href="login.html"
-                class="login_btn underline cursor-pointer font-(family-name:--tertiary-font) font-medium underline-offset-4 text-stone-600 text-base lg:text-xl"
-                >Login</a
-              >
-              <a
-                href="signup.html"
-                class="signup_btn text-white px-5 py-2 hover:bg-blue-600 cursor-pointer font-medium rounded-md text-base lg:text-xl transition duration-300"
-                >Sign Up</a
-              >
-            </div>
+          <div class="login_div flex-box">
+            <button href="login.html" class="login_btn">Login</button>
+            <button href="signup.html" class="signup_btn">Sign Up</button>
           </div>
         </div>
       </div>
@@ -94,932 +43,497 @@
     <!-- header-end -->
 
     <!-- banner-start -->
-    <section class="banner_sec relative">
-      <div class="container mx-auto sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col lg:flex-row xl:flex-row items-center justify-between pt-25"
-        >
-          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
-            <p class="uppercase tracking-widest text-sm mb-4 text-slate-300">
-              Successful Coaches Are Visionaries
+    <section class="banner_sec_main">
+      <div class="container">
+        <div class="banner_sec flex-box">
+          <div class="banner_content">
+            <h3>Get started your exciting <span>journey</span> with us.</h3>
+            <p>
+              A Team of experienced tourism professionals will provide you with
+              the best advice and tips for your desire place.
             </p>
-
-            <h1
-              class="text-4xl w-64 banner_title lg:text-5xl text-white leading-snug mb-6"
-            >
-              Good <span class="text-blue-700">coaching</span>
-              is good teaching & nothing else.
-            </h1>
-
-            <!-- Buttons -->
-            <div class="flex gap-4 mb-8 flex-wrap">
-              <a
-                href="#"
-                class="border border-white text-white px-6 py-2 rounded-md hover:bg-blue-600 hover:border-blue-600 hover:text-white transition duration-300"
-                >View Courses</a
-              >
-              <a
-                href="#"
-                class="text-white px-6 py-2 rounded-md hover:underline"
-                >Get Free Consultation</a
-              >
-            </div>
-
-            <!-- Search Bar -->
-            <div
-              class="flex items-center bg-white rounded-md px-2 py-2 w-full max-w-md overflow-hidden shadow-md"
-            >
-              <input
-                type="text"
-                placeholder="What do you want to learn today?"
-                class="px-4 py-2 text-base w-full text-black outline-none"
-              />
-              <button
-                class="bg-blue-600 text-base flex items-center gap-x-2 text-white px-4 py-2 cursor-pointer rounded-md"
-              >
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Search
-              </button>
-            </div>
+            <button class="discover_btn">Discover Now</button>
           </div>
-
-          <div class="w-full lg:w-1/2 relative flex justify-center">
-            <div class="quote_box">
-              <div
-                class="absolute left-0 -top-6 w-[260px] text-sm bg-transparent"
-              >
-                <h4 class="text-white">Shyam</h4>
-                <p class="text-slate-300 mt-1 leading-snug">
-                  In a coaching role, you ask the questions and rely more on
-                  your staff, who become the experts, to provide the
-                  information.
-                </p>
-                <p class="text-blue-400 pt-3">4.9</p>
-              </div>
-
-              <div
-                class="flex flex-col items-center justify-center h-64 absolute -top-18 -left-14"
-              >
-                <!-- Top Line -->
-                <div
-                  class="h-20 w-px bg-gradient-to-b from-cyan-400 to-transparent"
-                ></div>
-
-                <!-- Circle with Icon -->
-                <div
-                  class="bg-[#00aaff] p-2 flex items-center text-xs text-white justify-center rounded-full shadow-md"
-                >
-                  <i class="fa-solid fa-quote-right"></i>
-                </div>
-                <!-- Bottom Line -->
-                <div
-                  class="h-20 w-px bg-gradient-to-t from-cyan-400 to-transparent"
-                ></div>
-              </div>
-            </div>
-
-            <!-- Image -->
-            <div class="img_bg"></div>
-            <img
-              src="assets/img/png/banner_bg_right_side.png"
-              alt="Coach Woman"
-              class="w-[320px] sm:w-[360px] lg:w-[400px] object-cover z-10 right_img"
-            />
-
-            <!-- Decorative Circle (U shape imitation) -->
-            <div
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 border-[6px] border-white rounded-full w-36 h-36 opacity-20"
-            ></div>
-          </div>
+          <img src="assets/img/banner_img.png" alt="banner_img" />
         </div>
 
-        <div
-          class="banner_vector md:hidden lg:block absolute -bottom-0 left-160"
-        >
-          <img
-            src="assets/img/png/banner_vector.png"
-            class="hidden xl:block w-50"
-            alt="banner_vector"
-          />
+        <div class="apply_div flex-box">
+          <div class="search-box">
+            <label class="flex-box"
+              >Location<i class="fa-solid fa-angle-down"></i
+            ></label>
+            <span>Where are you going</span>
+          </div>
+          <div class="search-box">
+            <label class="flex-box"
+              >Date<i class="fa-solid fa-angle-down"></i
+            ></label>
+            <span>When you will go</span>
+          </div>
+          <div class="search-box">
+            <label class="flex-box"
+              >Guest<i class="fa-solid fa-angle-down"></i
+            ></label>
+            <span>Number of guest</span>
+          </div>
+          <button class="explore_btn">Explore Now</button>
         </div>
       </div>
     </section>
     <!-- banner-end -->
 
-    <!-- brand-start -->
-    <section
-      class="overflow-hidden bg-gradient-to-t from-[#2E08C7] to-[#7E08C7] py-6"
-    >
-      <div class="container mx-auto sm:px-6 lg:px-8">
-        <div class="">
-          <div
-            class="brands_icon flex items-center justify-around lg:gap-0 md:gap-0 gap-20"
-          >
-            <img
-              src="assets/img/png/brand_1.png"
-              class="w-25"
-              alt="brand_icon"
-            />
-            <img
-              src="assets/img/png/brand_2.png"
-              class="w-20"
-              alt="brand_icon"
-            />
-            <img
-              src="assets/img/png/brand_1.png"
-              class="w-25"
-              alt="brand_icon"
-            />
-            <img
-              src="assets/img/png/brand_3.png"
-              class="w-20"
-              alt="brand_icon"
-            />
-            <img
-              src="assets/img/png/brand_4.png"
-              class="w-20"
-              alt="brand_icon"
-            />
-            <img
-              src="assets/img/png/brand_2.png"
-              class="w-20"
-              alt="brand_icon"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- brand-end -->
-
     <!-- main-start -->
     <main>
-      <section
-        class="article_one py-18 lg:py-12 bg-[linear-gradient(7deg,_rgba(217,236,255,1)_0%,_rgba(240,243,255,1)_100%)]"
-      >
-        <div class="container mx-auto sm:px-6 lg:px-8">
+      <section class="article_one">
+        <div class="container">
           <div class="section_content">
-            <h3>Featured <span>Course</span></h3>
-            <p class="uppercase tracking-widest pt-2">
-              The feature courses are we invented our teaching part
+            <h3>Things you need <span>to do</span></h3>
+            <p>
+              We ensure that you’ll embark on a perfectly planned, safe vacation
+              at a price you can afford.
             </p>
-            <img
-              src="assets/img/png/bubble_vector.png"
-              class="absolute top-0 left-0 w-15"
-              alt="element_img"
-            />
+            <img src="assets/img/element_img/Element_1.png" alt="element_img" />
           </div>
-          <div class="main_card grid grid-col md:grid-cols-3 gap-6 pt-10">
-            <div
-              class="sec_card bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-            >
+          <div class="main_card">
+            <div class="sec_card">
               <div class="card_img">
-                <img
-                  src="assets/img/course_sec/course_1.jpg"
-                  class="rounded-t-lg"
-                  alt="card_icon"
-                />
+                <img src="assets/img/png/card_icon.png" alt="card_icon" />
               </div>
-              <div class="card_content p-3 font-(family-name:--tertiary-font)">
-                <div
-                  class="sub_txt text-sm font-medium text-slate-700 flex justify-between items-center"
-                >
-                  <span>1,957 Students</span>
-                  <span>01h 59m</span>
-                </div>
-                <h4 class="font-semibold py-2">
-                  Motion Graphics: Create a Nice Typography Animation
-                </h4>
-                <div
-                  class="sub_txt text-md font-semibold py-2 text-slate-700 flex justify-between items-center"
-                >
-                  <span>Rs.499</span>
-                  <a href="cart.html" class="cursor-pointer"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
+              <div class="card_content">
+                <h4>Sign Up</h4>
+                <p>
+                  Completes all the work associated with planning and
+                  processing.
+                </p>
               </div>
             </div>
-            <div
-              class="sec_card bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-            >
+            <div class="sec_card vector_2">
               <div class="card_img">
-                <img
-                  src="assets/img/course_sec/course_2.jpg"
-                  class="rounded-t-lg"
-                  alt="card_icon"
-                />
+                <img src="assets/img/png/card_icon_2.png" alt="card_icon" />
               </div>
-              <div class="card_content p-3 font-(family-name:--tertiary-font)">
-                <div
-                  class="sub_txt text-sm font-medium text-slate-700 flex justify-between items-center"
-                >
-                  <span>9,575 Students</span>
-                  <span>01h 59m</span>
-                </div>
-                <h4 class="font-semibold py-2">
-                  Advance PHP knowledge with JS to make smart web
-                </h4>
-                <div
-                  class="sub_txt text-md font-semibold py-2 text-slate-700 flex justify-between items-center"
-                >
-                  <span>Rs.499</span>
-                  <a href="cart.html" class="cursor-pointer"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
+              <div class="card_content">
+                <h4>Worth of Money</h4>
+                <p>
+                  After successful access then book from exclusive deals &
+                  pricing.
+                </p>
               </div>
             </div>
-            <div
-              class="sec_card bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-            >
+            <div class="sec_card vector_3">
               <div class="card_img">
-                <img
-                  src="assets/img/course_sec/course_3.jpg"
-                  class="rounded-t-lg"
-                  alt="card_icon"
-                />
+                <img src="assets/img/png/card_icon_3.png" alt="card_icon" />
               </div>
-              <div class="card_content p-3 font-(family-name:--tertiary-font)">
-                <div
-                  class="sub_txt text-sm font-medium text-slate-700 flex justify-between items-center"
-                >
-                  <span>2957 Students</span>
-                  <span>02h 49m</span>
-                </div>
-                <h4 class="font-semibold py-2">
-                  Education Software and PHP and JS System Script
-                </h4>
-                <div
-                  class="sub_txt text-md font-semibold py-2 text-slate-700 flex justify-between items-center"
-                >
-                  <span>Rs.499</span>
-                  <a href="cart.html" class="cursor-pointer"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
+              <div class="card_content">
+                <h4>Exciting Travel</h4>
+                <p>
+                  Start and explore a wide range of exciting travel experience.
+                </p>
               </div>
             </div>
-            <div
-              class="sec_card bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-            >
-              <div class="card_img">
-                <img
-                  src="assets/img/course_sec/course_4.jpg"
-                  class="rounded-t-lg"
-                  alt="card_icon"
-                />
-              </div>
-              <div class="card_content p-3 font-(family-name:--tertiary-font)">
-                <div
-                  class="sub_txt text-sm font-medium text-slate-700 flex justify-between items-center"
-                >
-                  <span>5,457 Students</span>
-                  <span>01h 59m</span>
-                </div>
-                <h4 class="font-semibold py-2">
-                  The Complete Financial Analyst Training & Investing
-                </h4>
-                <div
-                  class="sub_txt text-md font-semibold py-2 text-slate-700 flex justify-between items-center"
-                >
-                  <span>Rs.499</span>
-                  <a href="cart.html" class="cursor-pointer"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sec_card bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-            >
-              <div class="card_img">
-                <img
-                  src="assets/img/course_sec/course_5.jpg"
-                  class="rounded-t-lg"
-                  alt="card_icon"
-                />
-              </div>
-              <div class="card_content p-3 font-(family-name:--tertiary-font)">
-                <div
-                  class="sub_txt text-sm font-medium text-slate-700 flex justify-between items-center"
-                >
-                  <span>595 Students</span>
-                  <span>01h 49m</span>
-                </div>
-                <h4 class="font-semibold py-2">
-                  Marketing 2023: Complete Guide To Instagram Growth
-                </h4>
-                <div
-                  class="sub_txt text-md font-semibold py-2 text-slate-700 flex justify-between items-center"
-                >
-                  <span>Rs.499</span>
-                  <a href="cart.html" class="cursor-pointer"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sec_card bg-white rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-            >
-              <div class="card_img">
-                <img
-                  src="assets/img/course_sec/course_6.jpg"
-                  class="rounded-t-lg"
-                  alt="card_icon"
-                />
-              </div>
-              <div class="card_content p-3 font-(family-name:--tertiary-font)">
-                <div
-                  class="sub_txt text-sm font-medium text-slate-700 flex justify-between items-center"
-                >
-                  <span>458 Students</span>
-                  <span>03h 00m</span>
-                </div>
-                <h4 class="font-semibold py-2">
-                  Learn 3D Modelling and Design for Beginners
-                </h4>
-                <div
-                  class="sub_txt text-md font-semibold py-2 text-slate-700 flex justify-between items-center"
-                >
-                  <span>Rs.499</span>
-                  <a href="cart.html" class="cursor-pointer"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center mt-15">
-            <a
-              href="courses.html"
-              target="_blank"
-              class="text-white p-2 px-3.5 text-xl rounded-lg font-(family-name:--primary-font)! explore_btn"
-              >Explore courses</a
-            >
           </div>
         </div>
       </section>
-      <section
-        class="article_two py-18 bg-[linear-gradient(85deg,_#739FE8_15%,_#4f18ca_100%)]"
-      >
-        <div class="container mx-auto sm:px-6 lg:px-8">
-          <div class="section_content text-white">
-            <h3 class="font-(family-name:--primary-font)! text-white!">
-              Why
-              <span class="text-blue-700! font-(family-name:--primary-font)!"
-                >learn</span
-              >
-              with our courses ?
-            </h3>
-            <p class="font-(family-name:--tertiary-font)! w-2xl pt-4">
-              We are providing the best courses and top classes.And extradinery
-              placement training.....
-            </p>
-            <img
-              src="assets/img/png/center_vector.png"
-              class="absolute rotate-90 top-0 -left-20 xl:-left-25 w-50"
-              alt="element_img"
-            />
-          </div>
-
-          <div
-            class="learn_details flex flex-col items-center gap-y-10 py-12 px-4 md:grid md:grid-cols-3 md:px-0 md:items-start md:gap-x-8"
-          >
-            <figure class="learn_card text-white text-center relative">
-              <img
-                src="assets/img/png/learn_1.png"
-                class="mx-auto"
-                alt="learn_icon"
-              />
-              <figcaption>
-                <h4 class="py-2 text-2xl">01. Learn</h4>
-                <p class="text-sm lg:text-lg lg:w-75 mx-auto">
-                  Learn continually. There is always “one more thing”to learn.
-                </p>
-              </figcaption>
-            </figure>
-            <figure
-              class="learn_card text-white vector_div text-center relative"
-            >
-              <img
-                src="assets/img/png/learn_2.png"
-                class="mx-auto"
-                alt="learn_icon"
-              />
-              <figcaption>
-                <h4 class="py-2 text-2xl">02. Graduate</h4>
-                <p class="text-sm lg:text-lg lg:w-50 mx-auto">
-                  Be bold,be courageous, be your best.
-                </p>
-              </figcaption>
-            </figure>
-            <figure class="learn_card text-white text-center relative">
-              <img
-                src="assets/img/png/learn_3.png"
-                class="mx-auto"
-                alt="learn_icon"
-              />
-              <figcaption>
-                <h4 class="py-2 text-2xl">03. Work</h4>
-                <p class="text-sm lg:text-lg lg:w-64 mx-auto">
-                  Great companies are built in the office,with hard work put in
-                  by team.
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section
-        class="article_three py-18 bg-[linear-gradient(7deg,_rgba(217,236,255,1)_0%,_rgba(240,243,255,1)_100%)]"
-      >
-        <div class="container mx-auto sm:px-6 lg:px-8">
+      <section class="article_two">
+        <div class="container">
           <div class="section_content">
-            <h3 class="font-(family-name:--primary-font)!">
-              Top
-              <span class="text-blue-700! font-(family-name:--primary-font)!"
-                >Categories</span
-              >
-            </h3>
-            <p class="pt-2 text-slate-600">
-              100+ unique online course list designs
+            <h3>Exclusive <span>deals & discounts</span></h3>
+            <p>
+              Discover our fantastic early booking discounts & start planning
+              your journey.
             </p>
           </div>
-          <div
-            class="category_details grid grid-col md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 items-center justify-center gap-5"
-          >
-            <div
-              class="card_category bg-white p-8 flex flex-col items-center justify-center h-full text-center rounded-xl cursor-pointer hover:shadow-xl transition-shadow duration-300"
-            >
-              <div class="category_img">
+          <div class="carousel_card_main flex-box">
+            <div class="card carousel_card">
+              <div class="carousel_img">
                 <img
-                  src="assets/img/png/category_1.png"
-                  class="w-15"
-                  alt="category_img"
+                  src="assets/img/details_discounts/Image_1.jpg"
+                  alt="Image_1"
                 />
+                <button class="book_btn">Book Now</button>
+                <div class="overlay"></div>
               </div>
-              <div class="category_content">
-                <h4 class="text-2xl text-slate-700 my-10">Digtal Marketing</h4>
-                <p class="text-lg text-slate-600">25 Courses</p>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>Madrid</h4>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.8</span>
+                  </div>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Spain
+                  </p>
+
+                  <div class="price_tag_div flex-box">
+                    <del>$950</del>
+                    <p class="price_tag">$850</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="card_category bg-white p-8 flex-box flex-col h-full text-center rounded-xl cursor-pointer hover:shadow-xl transition-shadow duration-300"
-            >
-              <div class="category_img">
+            <div class="card carousel_card">
+              <div class="carousel_img">
                 <img
-                  src="assets/img/png/category_2.png"
-                  class="w-15"
-                  alt="category_img"
+                  src="assets/img/details_discounts/Image_2.jpg"
+                  alt="Image_1"
                 />
+                <button class="book_btn">Book Now</button>
+                <div class="overlay"></div>
               </div>
-              <div class="category_content">
-                <h4 class="text-2xl text-slate-700 my-10">Web Development</h4>
-                <p class="text-lg text-slate-600">16 Courses</p>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>Firenze</h4>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.5</span>
+                  </div>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Italy
+                  </p>
+
+                  <div class="price_tag_div flex-box">
+                    <del>$850</del>
+                    <p class="price_tag">$750</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="card_category bg-white p-8 flex-box flex-col h-full text-center rounded-xl cursor-pointer hover:shadow-xl transition-shadow duration-300"
-            >
-              <div class="category_img">
+            <div class="card carousel_card">
+              <div class="carousel_img">
                 <img
-                  src="assets/img/png/category_3.png"
-                  class="w-15"
-                  alt="category_img"
+                  src="assets/img/details_discounts/Image_3.jpg"
+                  alt="Image_1"
                 />
+                <button class="book_btn">Book Now</button>
+                <div class="overlay"></div>
               </div>
-              <div class="category_content">
-                <h4 class="text-2xl text-slate-700 my-10">Art & Humanities</h4>
-                <p class="text-lg text-slate-600">76 Courses</p>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>Paris</h4>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.4</span>
+                  </div>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    France
+                  </p>
+
+                  <div class="price_tag_div flex-box">
+                    <del>$699</del>
+                    <p class="price_tag">$599</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="card_category bg-white p-8 flex-box flex-col h-full text-center rounded-xl cursor-pointer hover:shadow-xl transition-shadow duration-300"
-            >
-              <div class="category_img">
+            <div class="card carousel_card">
+              <div class="carousel_img">
                 <img
-                  src="assets/img/png/category_4.png"
-                  class="w-15"
-                  alt="category_img"
+                  src="assets/img/details_discounts/Image_4.jpg"
+                  alt="Image_1"
                 />
+                <button class="book_btn">Book Now</button>
+                <div class="overlay"></div>
               </div>
-              <div class="category_content">
-                <h4 class="text-2xl text-slate-700 my-10">
-                  Personal Development
-                </h4>
-                <p class="text-lg text-slate-600">22 Courses</p>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>London</h4>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.8</span>
+                  </div>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    UK
+                  </p>
+
+                  <div class="price_tag_div flex-box">
+                    <del>$950</del>
+                    <p class="price_tag">$850</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="card_category bg-white p-8 flex-box flex-col h-full text-center rounded-xl cursor-pointer hover:shadow-xl transition-shadow duration-300"
-            >
-              <div class="category_img">
+          </div>
+          <div class="carousel_btn flex-box">
+            <button class="prev_btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="next_btn active">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="article_three">
+        <div class="container">
+          <div class="section_content">
+            <h3>Best <span>vacation plan</span></h3>
+            <p>
+              Plan your perfect vacation with our travel agency. Choose among
+              hundreds of all-inclusive offers!
+            </p>
+            <img src="assets/img/element_img/Element_2.png" alt="element_img" />
+          </div>
+          <div class="carousel_btn flex-box">
+            <button class="prev_btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="next_btn active">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="carousel_card_main flex-box">
+            <div class="card carousel_card vacation_card">
+              <div class="carousel_img">
                 <img
-                  src="assets/img/png/category_5.png"
-                  class="w-15"
-                  alt="category_img"
+                  src="assets/img/vaccation_plan/vaccation_img_1.jpg"
+                  alt="vacation_img"
                 />
               </div>
-              <div class="category_content">
-                <h4 class="text-2xl text-slate-700 my-10">IT and Software</h4>
-                <p class="text-lg text-slate-600">110 Courses</p>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>Rome, Italty</h4>
+                  <p class="price_tag">$5,42k</p>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    10 Days Trip
+                  </p>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.8</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="card_category bg-white p-8 flex-box flex-col h-full text-center rounded-xl cursor-pointer hover:shadow-xl transition-shadow duration-300"
-            >
-              <div class="category_img">
+            <div class="card carousel_card vacation_card">
+              <div class="carousel_img">
                 <img
-                  src="assets/img/png/category_6.png"
-                  class="w-15"
-                  alt="category_img"
+                  src="assets/img/vaccation_plan/vaccation_img_2.jpg"
+                  alt="vacation_img"
                 />
               </div>
-              <div class="category_content">
-                <h4 class="text-2xl text-slate-700 my-10">Graphic Design</h4>
-                <p class="text-lg text-slate-600">85 Courses</p>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>London,UK</h4>
+                  <p class="price_tag">$2,42k</p>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    7 Days Trip
+                  </p>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card carousel_card vacation_card">
+              <div class="carousel_img">
+                <img
+                  src="assets/img/vaccation_plan/vaccation_img_3.jpg"
+                  alt="vacation_img"
+                />
+              </div>
+              <div class="carousel_content">
+                <div class="flex-box top_row">
+                  <h4>Osaka,Japan</h4>
+                  <p class="price_tag">$5,42k</p>
+                </div>
+                <div class="bottom_row flex-box">
+                  <p class="location_txt flex-box">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    10 Days Trip
+                  </p>
+                  <div class="rating_icon flex-box">
+                    <i class="fa-solid fa-star"></i
+                    ><span class="rating_tag"> 4.8</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="article_four py-18 bg-gradient-to-t from-blue-100 to-white"
-      >
-        <div class="container mx-auto sm:px-6 lg:px-8">
-          <div
-            class="search_banner p-10 xl:p-15 text-center rounded-2xl relative"
-          >
-            <h3
-              class="text-white! font-(family-name:--primary-font)! w-full mx-auto leading-[1.3]"
-            >
-              Subscribe For Get Update <br />
-              Every New Courses
-            </h3>
-            <p class="text-base mb-8 mt-5">
-              20k+ students daily learn with Eduvi. Subscribe for new courses.
-            </p>
-            <div
-              class="flex flex-col sm:flex-row items-center justify-center input_sec_banner lg:rounded-lg xl:rounded-lg md:rounded-lg w-full max-w-2xl mx-auto overflow-hidden"
-            >
-              <input
-                type="text"
-                placeholder="enter your email"
-                class="px-4 py-3 text-base w-full rounded sm:rounded-lg lg:rounded-none md:rounded-none text-white outline-none"
-              />
-              <button
-                class="bg-blue-800 text-base flex items-center justify-center cursor-pointer gap-x-2 text-white px-6 py-3 w-full sm:w-auto rounded-r-lg mt-2 sm:mt-0 rounded-lg lg:rounded-none sm:rounded-lg md:rounded-none"
-              >
-                Subscribe
-              </button>
-            </div>
-            <div class="banner_img_div hidden lg:block">
-              <img
-                src="assets/img/subscribe_banner/left_side_1.png"
-                class="absolute top-12 left-12"
-                alt="banner_icon"
-              />
-              <img
-                src="assets/img/subscribe_banner/left_side_2.png"
-                class="absolute -translate-y-12 xl:top-50 xl:left-50 md:left-40 md:top-45"
-                alt="banner_icon"
-              />
-              <img
-                src="assets/img/subscribe_banner/left_side_3.png"
-                class="absolute bottom-12 left-12"
-                alt="banner_icon"
-              />
-              <img
-                src="assets/img/subscribe_banner/right_side_1.png"
-                class="absolute top-12 right-12"
-                alt="banner_icon"
-              />
-              <img
-                src="assets/img/subscribe_banner/right_side_2.png"
-                class="absolute -translate-y-12 xl:top-50 xl:right-50 md:right-40 md:top-45"
-                alt="banner_icon"
-              />
-              <img
-                src="assets/img/subscribe_banner/right_side_3.png"
-                class="absolute bottom-12 right-12"
-                alt="banner_icon"
-              />
-            </div>
-
-            <div class="triangle_div">
-              <img
-                src="assets/img/subscribe_banner/bottom_triangle_left_side_1.png"
-                class="absolute w-15 -left-7 -bottom-7"
-                alt="triangle_shape"
-              />
-              <img
-                src="assets/img/subscribe_banner/bottom_triangle_left_side_1.png"
-                class="absolute w-15 center_img top-2.5"
-                alt="triangle_shape"
-              />
-            </div>
-          </div>
-          <!-- play_banner -->
-          <div class="play_banner relative mt-30">
-            <div class="triangle_play_div absolute -top-15 right-12">
-              <img
-                src="assets/img/subscribe_banner/bottom_triangle_right_side_2.png"
-                class="w-15"
-                alt="triangle_icon"
-              />
-            </div>
-            <div
-              class="relative flex items-center justify-center play_banner_sec"
-            >
-              <div
-                class="overlay_banner absolute bg-[#0000004d] w-full lg:w-[48rem] h-full rounded-[3rem]"
-              ></div>
-              <img
-                src="assets/img/play_sec/play_img.jpg"
-                class="w-3xl mx-auto banner_play rounded-[3rem]"
-                alt="play_banner"
-              />
-            </div>
-            <img
-              src="assets/img/play_sec/play_banner_right.png"
-              class="w-25 right-0 absolute bottom-0 lg:w-45 lg:right-7 xl:right-38 2xl:right-69.5"
-              alt="play_icon"
-            />
-            <div
-              class="flex items-center justify-center animate_sec absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            >
-              <span
-                class="absolute inline-flex h-full w-full rounded-full bg-gradient-to-r from-white to-slate-400 opacity-50 animate-ping"
-              ></span>
-              <button
-                class="relative bg-[linear-gradient(270deg,_rgba(127,86,217,1)_25%,_rgba(33,181,115,1)_66%)] z-10 play_btn cursor-pointer rounded-full p-6 flex items-center justify-center shadow-lg"
-              >
-                <i class="fa-solid fa-play text-white text-2xl"></i>
-              </button>
-            </div>
-          </div>
-
-          <!-- ---testimonial---- -->
-          <div class="testimonial_sec pt-25">
+      <section class="article_four">
+        <div class="container">
+          <div class="about_main flex-box">
             <div class="section_content">
-              <h3 class="">
-                <span class="text-blue-700! font-(family-name:--primary-font)!"
-                  >Testimonials</span
-                >
-              </h3>
-              <p class="pt-2 text-slate-600">What our student say about us</p>
-              <img
-                src="assets/img/png/off_bubble_vector.png"
-                class="absolute top-20 left-12 w-15"
-                alt="element_img"
-              />
-            </div>
-            <div class="pt-10 lg:pt-15">
-              <div
-                class="lg:flex lg:flex-row lg:gap-4 md:flex md:flex-row md:gap-4 justify-center gap-10 relative flex flex-col"
-              >
-                <div class="relative bg-white p-6 shadow-sm rounded-md">
-                  <img
-                    src="assets/img/png/testimonial_user.png"
-                    alt="User"
-                    class="w-12 h-12 object-contain rounded-full absolute -top-6 left-1/2 transform -translate-x-1/2"
-                  />
-
-                  <p class="mt-8 text-sm font-normal text-slate-500">
-                    Such an amazing traniner and easily understand the entire
-                    syllabus, and the guidence will be super and good to the way
-                    of explaning.
-                  </p>
-
-                  <div
-                    class="mt-4 flex justify-start space-x-1 text-yellow-400 text-md"
-                  >
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star text-gray-300"></i></span>
-                  </div>
-                </div>
-
-                <div class="relative bg-white p-6 shadow-2xl rounded-md">
-                  <img
-                    src="assets/img/png/testimonial_user.png"
-                    alt="User"
-                    class="w-12 h-12 object-contain rounded-full absolute -top-6 left-1/2 transform -translate-x-1/2"
-                  />
-
-                  <p class="mt-8 text-sm font-normal text-slate-500">
-                    Such an amazing traniner and easily understand the entire
-                    syllabus, and the guidence will be super and good to the way
-                    of explaning.
-                  </p>
-
-                  <div
-                    class="mt-4 flex justify-start space-x-1 text-yellow-400 text-md"
-                  >
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star text-gray-300"></i></span>
-                  </div>
-                </div>
-
-                <div class="relative bg-white p-6 shadow-sm rounded-md">
-                  <img
-                    src="assets/img/png/testimonial_user.png"
-                    alt="User"
-                    class="w-12 h-12 object-contain rounded-full absolute -top-6 left-1/2 transform -translate-x-1/2"
-                  />
-
-                  <p class="mt-8 text-sm font-normal text-slate-500">
-                    Such an amazing traniner and easily understand the entire
-                    syllabus, and the guidence will be super and good to the way
-                    of explaning.
-                  </p>
-
-                  <div
-                    class="mt-4 flex justify-start space-x-1 text-yellow-400 text-md"
-                  >
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star text-gray-300"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex justify-center md:justify-end lg:justify-end mt-6 space-x-4"
-              >
-                <button
-                  class="w-10 h-10 rounded-full cursor-pointer border border-blue-600 text-blue-600 hover:bg-blue-200 flex items-center justify-center"
-                >
+              <h3>What people say <span>about Us.</span></h3>
+              <p>
+                Our Clients send us bunch of smilies with our services and we
+                love them.
+              </p>
+              <div class="carousel_btn flex-box">
+                <button class="prev_btn">
                   <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button
-                  class="w-10 h-10 rounded-full border cursor-pointer border-blue-600 text-blue-600 hover:bg-blue-200 flex items-center justify-center"
-                >
+                <button class="next_btn active">
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
             </div>
+            <div class="testimonial-right">
+              <div class="testimonial-card">
+                <div class="profile-img">
+                  <img src="assets/img/profile_img.png" alt="User Image" />
+                </div>
+                <p class="testimonial-text">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <div class="testimonial-author">
+                  <h4>Mike taylor</h4>
+                  <span>Lahore, Pakistan</span>
+                </div>
+              </div>
+              <div class="testimonial-background">
+                <span>CEO of Red Button</span>
+              </div>
+            </div>
+            <img
+              src="assets/img/element_img/Element_3.png"
+              class="vector_img"
+              alt="element_img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="article_five">
+        <div class="container">
+          <div class="section_content">
+            <h3>Get update with <span>latest blog</span></h3>
+          </div>
+          <div class="main_card_blog flex-box">
+            <div class="card_blog">
+              <div class="blog_img">
+                <img src="assets/img/blogs/Image_1.jpg" alt="blog_img" />
+              </div>
+              <div class="blog_content">
+                <h4>The Amazing Difference a Year of Travelling .</h4>
+                <span>July 27, 2021</span>
+              </div>
+            </div>
+            <div class="card_blog">
+              <div class="blog_img">
+                <img src="assets/img/blogs/Image_2.jpg" alt="blog_img" />
+              </div>
+              <div class="blog_content">
+                <h4>Travel far enough, you meet yourself.</h4>
+                <span>July 27, 2021</span>
+              </div>
+            </div>
+            <div class="card_blog">
+              <div class="blog_img">
+                <img src="assets/img/blogs/Image_3.jpg" alt="blog_img" />
+              </div>
+              <div class="blog_content">
+                <h4>How to Save Money While Visiting Africa .</h4>
+                <span>July 27, 2021</span>
+              </div>
+            </div>
+            <div class="card_blog">
+              <div class="blog_img">
+                <img src="assets/img/blogs/Image_4.jpg" alt="blog_img" />
+              </div>
+              <div class="blog_content">
+                <h4>Reflections on 5 Months of Travel: Time to Hang</h4>
+                <span>July 27, 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="dot-indicator flex-box">
+            <div class="dot"></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </section>
+      <section class="banner_bottom">
+        <div class="container">
+          <div class="banner_bottom_main">
+            <div class="banner_bottom_content flex-box">
+              <h3>Subscribe and get exclusive deals & offer</h3>
+            </div>
+            <form class="subscribe-form flex-box">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter your mail" />
+              <button type="submit" class="sub_btn">Subscribe</button>
+            </form>
           </div>
         </div>
       </section>
     </main>
-
     <!-- main-end -->
-    <footer class="bg-gradient-to-r from-purple-600 to-blue-500">
-      <div class="container mx-auto sm:px-6 lg:px-8">
-        <div
-          class="footer_main grid grid-cols-2 py-15 justify-start items-start gap-5 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 md:gap-y-10"
-        >
-          <div class="footer-col col-span-1">
-            <h4 class="text-3xl text-blue-950 mb-5">Connect</h4>
-            <div class="footer_logo">
+    <footer>
+      <div class="container">
+        <div class="footer_main flex-box">
+          <div class="footer-col">
+            <div class="logo">
               <a href="index.html"
-                ><img
-                  src="assets/img/footer_logo.png"
-                  class="w-40 filter saturate-[2]"
-                  alt="Askme_indentity_logo"
+                ><img src="assets/img/main_logo.svg" alt="Trabook Logo"
               /></a>
             </div>
-            <p class="footer_txt text-sm text-stone-800 py-5">
-              Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony,
-              Mailardevpally, Nawab Saheb Kunta, Hyd, 500005.
+            <p class="footer_txt">
+              Book your trip in minute, get full<br />Control for much longer.
             </p>
+            <div class="social-icons flex-box">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="active"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
           </div>
           <div class="footer-col">
-            <h4 class="text-3xl text-blue-950 mb-5">Classes</h4>
-            <ul class="footer-links flex flex-col items-start gap-y-3">
-              <li>
-                <a href="#" class="text-xl hover:text-white"
-                  >Classroom courses</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white"
-                  >Virtual classroom courses</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white"
-                  >E-learning courses</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Video Courses</a>
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Offline Courses</a>
-              </li>
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Logistic</a></li>
+              <li><a href="#">Privacy & Policy</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4 class="text-3xl text-blue-950 mb-5">Community</h4>
-            <ul class="footer-links flex flex-col items-start gap-y-3">
-              <li><a href="#" class="text-xl hover:text-white">Learners</a></li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Parteners</a>
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Developers</a>
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Transactions</a>
-              </li>
-              <li><a href="#" class="text-xl hover:text-white">Blog</a></li>
+            <h4>Contact</h4>
+            <ul class="footer-links">
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affiliates</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4 class="text-3xl text-blue-950 mb-5">Quick links</h4>
-            <ul class="footer-links flex flex-col items-start gap-y-3">
-              <li><a href="#" class="text-xl hover:text-white">Home</a></li>
-              <li>
-                <a href="#" class="text-xl hover:text-white"
-                  >Professional Education</a
-                >
-              </li>
-              <li><a href="#" class="text-xl hover:text-white">Courses</a></li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Admissions</a>
-              </li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Testimonial</a>
-              </li>
-              <li><a href="#" class="text-xl hover:text-white">Programs</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4 class="text-3xl text-blue-950 mb-5">More</h4>
-            <ul class="footer-links flex flex-col items-start gap-y-3">
-              <li><a href="#" class="text-xl hover:text-white">Press</a></li>
-              <li>
-                <a href="#" class="text-xl hover:text-white">Investors</a>
-              </li>
-              <li><a href="#" class="text-xl hover:text-white">Terms</a></li>
-              <li><a href="#" class="text-xl hover:text-white">Privacy</a></li>
-              <li><a href="#" class="text-xl hover:text-white">Help</a></li>
-              <li><a href="#" class="text-xl hover:text-white">Contact</a></li>
+            <h4>More</h4>
+            <ul class="footer-links">
+              <li><a href="#">Press Centre</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Low fare tips</a></li>
             </ul>
           </div>
         </div>
-      </div>
-      <div
-        class="social_icons flex-box gap-4 py-4 bg-[linear-gradient(180deg,_rgba(3,81,174,0.31)_30%,_rgba(165,66,200,0.8)_100%)]"
-      >
-        <a
-          href="#"
-          class="rounded-full w-[40px] h-[40px] flex items-center justify-center bg-white hover:-translate-y-1"
-          ><img
-            src="assets/img/social_media_icon/insta_icon.png"
-            alt="social-icons"
-        /></a>
-        <a
-          href="#"
-          class="rounded-full w-[40px] h-[40px] flex items-center justify-center bg-white hover:-translate-y-1"
-          ><img
-            src="assets/img/social_media_icon/whatsapp_icon.png"
-            alt="social-icons"
-        /></a>
-        <a
-          href="#"
-          class="rounded-full w-[40px] h-[40px] flex items-center justify-center bg-white hover:-translate-y-1"
-          ><img
-            src="assets/img/social_media_icon/x_icon.png"
-            class=""
-            alt="social-icons"
-        /></a>
-        <a
-          href="#"
-          class="rounded-full w-[40px] h-[40px] flex items-center justify-center bg-white hover:-translate-y-1"
-          ><img
-            src="assets/img/social_media_icon/linkedin_icon.png"
-            alt="social-icons"
-        /></a>
-        <a
-          href="#"
-          class="rounded-full w-[40px] h-[40px] flex items-center justify-center bg-white hover:-translate-y-1"
-          ><img
-            src="assets/img/social_media_icon/youtube_icon.png"
-            alt="social-icons"
-        /></a>
-      </div>
+        <hr />
 
-      <div class="footer-bottom text-center py-2">
-        <p class="text-white text-sm">
-          Copyright @ 2025 askmeidentity. All Rights Reserved
-        </p>
+        <div class="footer-bottom flex-box">
+          <p>Copyright, Trabook 2022. All rights reserved.</p>
+          <a href="#">Terms & Conditions</a>
+        </div>
       </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <a
-      href="#top"
-      class="scroll-to-top rounded-full fixed bottom-5 right-5 text-xl text-white py-2 px-3.5 z-50 hover:-translate-y-2"
+    <a href="#top" class="scroll-to-top"
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
   </body>
